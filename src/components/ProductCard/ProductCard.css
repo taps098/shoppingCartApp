@@ -1,0 +1,30 @@
+.card{
+    /*display: grid;*/
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.imageid{
+    height: 300px;
+    width: 250px;
+    padding: 20px;
+    object-fit: cover;
+}
+.cardDescription{
+    position: absolute;
+    background: #fefefe;
+    width: 100%;
+    padding: 20px;
+    bottom: 0;
+    display: none;
+}
+.cardBody{
+    position: relative;
+    transition: box-shadow 300ms ;
+}
+.cardBody:hover{
+    box-shadow: 0px 0px 32px -18px black;
+}
+.cardBody:hover .cardDescription{
+    display: flex;
+}
